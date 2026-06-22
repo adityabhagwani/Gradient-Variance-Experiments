@@ -97,17 +97,20 @@ Each dataset notebook is fully self-contained: data loading, model definitions, 
 ---
 
 ## Repository Structure
+<pre>
 Gradient_Variance_Experiments/
 ├── Breast_Cancer_Dataset/
 ├── Digits_Dataset/
 ├── Diabetes_Dataset/
 ├── Make_Moon_Dataset/
 └── Synthetic_High_Dimensional_Dataset/
-
+</pre>
+<pre>
 Each dataset folder contains:
 ├── Experiment Notebook
 ├── Results for 5 Random Seeds (42, 123, 456, 789, 2024)
 └── Aggregated Results Spreadsheet
+</pre>
 
 
 Each `Seed X Result(s)` folder contains the per-neuron gradient plots (direction cosine similarity over epochs, magnitude log-ratio over epochs) and a JSON dump of the raw per-seed statistics. Each `.xlsx` file aggregates Dataset / Seed / dead neurons / valid neurons / direction-disagreement count / magnitude-volatility count across all 5 seeds, with mean and standard deviation computed via live Excel formulas.
