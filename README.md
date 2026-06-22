@@ -97,25 +97,17 @@ Each dataset notebook is fully self-contained: data loading, model definitions, 
 ---
 
 ## Repository Structure
-Gradient Variance Exps/
-├── Neuron_Gradient_Variance_Experiments.ipynb # Original make_moons baseline
-└── Exps for Different Datasets/
-├── Breast Cancer Dataset/
-│ ├── Neuron_Gradient_Variance_BreastCancer.ipynb
-│ ├── Seed 42 Result Files/ ... Seed 2024 Result Files/
-│ └── breast_cancer_experiment_results.xlsx
-├── Digits Dataset/
-│ ├── Neuron_Gradient_Variance_Digits.ipynb
-│ ├── Seed 42 Result Files/ ... Seed 2024 Result Files/
-│ └── digits_experiment_results.xlsx
-├── Diabetes Dataset/
-│ ├── Neuron_Gradient_Variance_Diabetes.ipynb
-│ ├── Seed 42 Results/ ... Seed 2024 Results/
-│ └── diabetes_experiment_results.xlsx
-└── Synthetic High Dimensional Dataset/
-├── Neuron_Gradient_Variance_SyntheticHighDim.ipynb
-├── Seed 42 Results/ ... Seed 2024 Results/
-└── synthetichighdim_experiment_results.xlsx
+Gradient_Variance_Experiments/
+├── Breast_Cancer_Dataset/
+├── Digits_Dataset/
+├── Diabetes_Dataset/
+├── Make_Moon_Dataset/
+└── Synthetic_High_Dimensional_Dataset/
+
+Each dataset folder contains:
+├── Experiment Notebook
+├── Results for 5 Random Seeds (42, 123, 456, 789, 2024)
+└── Aggregated Results Spreadsheet
 
 
 Each `Seed X Result(s)` folder contains the per-neuron gradient plots (direction cosine similarity over epochs, magnitude log-ratio over epochs) and a JSON dump of the raw per-seed statistics. Each `.xlsx` file aggregates Dataset / Seed / dead neurons / valid neurons / direction-disagreement count / magnitude-volatility count across all 5 seeds, with mean and standard deviation computed via live Excel formulas.
