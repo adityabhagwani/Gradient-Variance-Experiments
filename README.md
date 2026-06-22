@@ -2,7 +2,7 @@
 
 **Do overfit neurons exhibit systematically noisier gradients than generalizing neurons — and can this be detected without ever touching the validation set?**
 
-This repository investigates whether memorization in deep neural networks leaves a detectable signature in the per-neuron gradient dynamics of the first hidden layer, independent of any explicit train/validation comparison. It is the second strand of a two-part research program; the first strand ([Curve Optimizer](../README.md)) approached the same memorization phenomenon from the frequency domain of a model's *output*. This work approaches it from the *gradients themselves*.
+This repository investigates whether memorization in deep neural networks leaves a detectable signature in the per-neuron gradient dynamics of the first hidden layer, independent of any explicit train/validation comparison. It is the second strand of a two-part research program; the first strand ([Curve Optimizer](../Curve-Optimizer/README.md)) approached the same memorization phenomenon from the frequency domain of a model's *output*. This work approaches it from the *gradients themselves*.
 
 ---
 
@@ -142,7 +142,7 @@ This is consistent with — but does not prove — a causal story in which memor
 
 ## Relationship to the Curve Optimizer Project
 
-This work is the gradient-level counterpart to the [Curve Optimizer](../README.md) project, which targets the same underlying phenomenon — memorization in overfit models — from the frequency domain of a model's *output* curve rather than its internal gradients. Curve Optimizer shows that memorization deposits high-frequency noise in a model's output signal that can be filtered out post-hoc; this repository asks whether the same memorization process is visible even earlier, in the gradient signal that produced the weights in the first place. Together they sketch two independent, non-overlapping observational handles on the same underlying question: *what does memorization look like, mechanistically, inside a trained network?*
+This work is the gradient-level counterpart to the [Curve Optimizer](../Curve-Optimizer/README.md) project, which targets the same underlying phenomenon — memorization in overfit models — from the frequency domain of a model's *output* curve rather than its internal gradients. Curve Optimizer shows that memorization deposits high-frequency noise in a model's output signal that can be filtered out post-hoc; this repository asks whether the same memorization process is visible even earlier, in the gradient signal that produced the weights in the first place. Together they sketch two independent, non-overlapping observational handles on the same underlying question: *what does memorization look like, mechanistically, inside a trained network?*
 
 ---
 
