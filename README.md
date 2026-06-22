@@ -147,3 +147,8 @@ numpy
 scikit-learn
 matplotlib
 openpyxl
+
+---
+
+## Data
+All the graphs and data for this experiment amounts to several GB and hence it isn't feasible to be hosted here. Please get in touch with me if you'd like to get access to these.
